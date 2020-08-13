@@ -1,15 +1,15 @@
 .login_content{
     height: 580px;
 
-    border: 1px solid black;
-    margin-left: 37%;
-    margin-right: 37%;
+   
+    
     background-color: white;    
     margin-top: 80px;
     border-radius: 20px;
     align-items: center;
+   
 
-
+    width: 400px;
     display: flex;
     justify-content: center;
     text-align: center;

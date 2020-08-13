@@ -4,25 +4,12 @@ import Logo from './pp.png';
 
 class Signup_page extends React.Component {
 
-    constructor(props){
-        super(props);
-        this.state = {
-            id: '',
-            password: '',
-            checkpassword: '',
-            email: '',
-            check: false,
-            check2: false,
-            nickname: '',
 
-        }
-
-    }
 
 
 
     render() {
-        const{id,password,checkpassword,email,check,check2,nickname} = this.state;
+        
         
 
         return (

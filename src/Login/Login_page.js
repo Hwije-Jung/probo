@@ -2,6 +2,8 @@ import React from 'react';
 import './Login_page.css';
 import Appbar from '../Appbar/appbar';
 import Logo from './pp.png'
+import Search_button from './Search_button';
+import Signup_button from './Signup_button';
 
 class Longin extends React.Component {
     render() {
@@ -30,9 +32,10 @@ class Longin extends React.Component {
                         </form>
 
                         <div className="bottom_text">
-                            <a href="#none" style={{textDecoration: 'none'}}>회원 가입</a>
+                        
 
-                            <a href="#none" style={{textDecoration: 'none'}} className="bottom_text_search">ID/비밀번호 찾기</a>
+                            <Signup_button/>
+                            <Search_button/>
                         </div>
 
                         

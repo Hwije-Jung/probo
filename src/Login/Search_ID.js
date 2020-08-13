@@ -24,9 +24,9 @@ class Search_ID extends React.Component {
                             <input type="text" name="이메일" className="idinput" />
                         </div>
 
-                        <div className="pw_box">
+                        <div className="pw_box_sign">
                            
-                            <div style={{ fontSize: '10pt', marginLeft: '60px', paddingTop: '13px' }}>이메일에 아이디 받기</div>
+                            <div style={{marginTop:'10px', fontSize: '10pt', marginLeft: '60px', paddingTop: '17px' }}>이메일에 아이디 받기</div>
                             <input type='submit' value='전송' className="Signup_Button" ></input>
                         </div>
 
@@ -49,35 +49,6 @@ class Search_ID extends React.Component {
                            <input type='submit' value='전송' className="Signup_Button" ></input>
                        </div>
 
-
-
-                        {/* <div className="pw_box">
-                        <div className="text_" >성 별</div>
-                        <div style={{ marginLeft: "10px" }}>남자</div> <input type="radio" name="gender" value="male" style={{ marginRight: "20pt", marginTop: "6px" ,cursor:"pointer" }} checked />
-                        <div>여자</div> <input type="radio" name="gender" value="female" style={{ marginTop: "6px",cursor:"pointer" }} />
-
-                    </div>
-
-                    <div className="pw_box">
-                    <div className="text_" style={{marginRight:"-25px"}}>나 이</div>
-                        <select name="age" className="signup_select">
-                        
-                            <option value="10age" >10대</option>
-                            <option value="20age" >20대</option>
-                            <option value="30age" >30대</option>
-                            <option value="40age" >40대</option>
-                            <option value="50age" >50대</option>
-                        </select>
-
-                    </div> */}
-
-                        <input type='submit' value='확인' className="Signup_Button_finish"></input>
-
-                        {/* <div className="bottom_text">
-                    <a href="#none" style={{textDecoration: 'none'}}>회원 가입</a>
-
-                    <a href="#none" style={{textDecoration: 'none'}} className="bottom_text_search">ID/비밀번호 찾기</a>
-                </div> */}
 
 
                     </form>

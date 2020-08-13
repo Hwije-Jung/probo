@@ -3,6 +3,8 @@ import './appbar.css';
 import Appimg from './appbar.png';
 import Menu from './menu.png';
 import { Link } from "react-router-dom";
+import Login_button from '../Login/Login_button';
+
 class Appbar extends React.Component{
     constructor(props){
         super(props);
@@ -15,6 +17,7 @@ class Appbar extends React.Component{
         menu.classList.toggle('active');
         maininput.classList.toggle('active');
     }
+    
     render(){
         return(
             <div className="appbar"> 
@@ -24,7 +27,7 @@ class Appbar extends React.Component{
                     <li><a href="#!">고객지원</a></li>
                     <li><Link to="/compare">비교하기</Link></li>
                     <li><Link to="/subscribe">제품설명</Link></li>
-                    <li><Link to="/login">로그인</Link></li>
+                    <li><Login_button/></li>
                     <li><a href="#!">Q&A</a> </li>
                 </ul>
                 <a onClick={this.menuclick} className="appbar_toogle" href="#!">

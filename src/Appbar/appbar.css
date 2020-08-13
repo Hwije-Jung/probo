@@ -40,6 +40,7 @@
     color: white;
     font-weight: bolder;
     text-decoration: none;
+    cursor: pointer;
     
 }
 .appbar_toogle img{
@@ -74,14 +75,16 @@
         text-align: center;
         border-bottom: 1px solid rgb(105, 103, 103);
     }
+
     .appbar_toogle{
         display: block;  
     }
+
     .drop_menu.active{
         display: flex;
     }
+
     .main_input.active{
         margin-top: 220px;
     }
-   
 }
