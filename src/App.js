@@ -4,6 +4,7 @@ import Main from './Main';
 import Compare from './Compare';
 import Subscribe from './Subscribe';
 import Login from './Login/Login_page';
+import Mypage_page from './Mypage/Mypage_page';
 
 function App() {
   return (
@@ -13,7 +14,6 @@ function App() {
       <Route exact path="/compare" component={Compare}/>
       <Route exact path="/subscribe" component={Subscribe}/>
       <Route exact path="/login" component={Login}/>
-      
     </Router>
 
   );
