@@ -25,7 +25,7 @@ class Appbar extends React.Component{
                 <Link to="/"><img src={Appimg} alt="" height="50px" width="auto" href="#none"/></Link>
                 <ul className="drop_menu">
                     <li><Mypage_button/></li>
-                    <li><a href="#!">고객지원</a></li>
+                    <li><a href="/community">커뮤니티</a></li>
                     <li><Link to="/compare">비교하기</Link></li>
                     <li><Link to="/subscribe">제품설명</Link></li>
                     <li><Login_button/></li>

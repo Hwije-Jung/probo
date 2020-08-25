@@ -94,7 +94,10 @@ class Subscribe extends Component {
         return (
             <div className="Sub_allpage">
 
-        
+                <div>
+                    <Appbar />
+                </div>
+
 
                 <div className="Sub_content">
 
@@ -116,7 +119,7 @@ class Subscribe extends Component {
                     </div>
 
                     <div className="Sub_explain">
-                        <h1 className="Sub_choice" style={{color:'black'}}>{this.state.title}</h1>
+                        <h1 className="choice">{this.state.title}</h1>
 
                         <div className="Sub_explain_box">
 
@@ -137,9 +140,9 @@ class Subscribe extends Component {
 
                 </div>
 
-                {/* <div className="Sub_bottom_bar">
+                <div className="Sub_bottom_bar">
                     보 충 제 &nbsp; 비 교 할 &nbsp; 땐  ProBo!
-                </div> */}
+                </div>
             </div>
         )
     }

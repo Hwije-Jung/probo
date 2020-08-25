@@ -1,23 +1,21 @@
 .Sub_allpage{
   background-color: white;
-  /* height: 1000px; */
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(185, 185, 185);
-
 }
 
 .Sub_content{
-  /* height: 900px; */
-  margin-left: 5%;
-  margin-right: 5%;
+  height: 900px;
+  margin-left: 15%;
+  margin-right: 15%;
   background-color: rgb(185, 185, 185);
 
 }
 
 .Sub_title_box{
-  margin-top: 40px;
+  margin-top: 70px;
   margin-left: 30px;
   height: 60px;
 }
@@ -35,8 +33,6 @@
   width: 100%;
   flex-direction: row;
   flex-wrap : wrap;
-  margin-top: 20px;
-  margin-left: 3%;
 }
 
 .Sub_Button{
@@ -68,12 +64,10 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-
-  margin-bottom: 50px;
 }
 
 .Sub_choice{
-  color: black;
+  
 }
 
 .Sub_explain_box{

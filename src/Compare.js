@@ -54,9 +54,7 @@ class Compare extends Component{
   render(){
     return(
       <div>
-        <div className="App">
-          <Appbar/>
-        </div>
+   
         <div className="toptop">
         <div className="left_top">
           <App2/>
