@@ -1,6 +1,6 @@
 import React from 'react';
 import './Login_page.css';
-import Appbar from '../Appbar/appbar';
+// import Appbar from '../Appbar/appbar';
 import Logo from './pp.png'
 import Search_button from './Search_button';
 import Signup_button from './Signup_button';
@@ -10,8 +10,8 @@ class Longin extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            ID : '',
-            pw : ''
+            id : '',
+            pw : '',
         }
 
         this.onChange = this.onChange.bind(this);
@@ -19,31 +19,49 @@ class Longin extends React.Component {
     }
 
     onChange(e){
-        console.log(this.state.ID + "비밀번호: " + this.state.PW);
+
         this.setState({
             [e.target.name]:e.target.value
         })
+
+        console.log(this.state.id + "비밀번호: " + this.state.pw);
+
     }      
 
     onSubmit(e){
         e.preventDefault();
         const box = {
-            ID: this.state.ID,
-            PW: this.state.PW
+            id: this.state.id,
+            pw: this.state.pw
         }
 
-        fetch('http://localhost:3001',{
+    
+        fetch('http://localhost:3001/log',{
             method:"post",
             header : {
                 'content-type' : 'application/json'
             },
             body: JSON.stringify(box)
         })
-        // .then(res => res.json())
-        // .then(json =>{
+         .then(res => res.json())
+         .then(json => {
 
-        // })
+            if(json.success === true){   
+                alert("로그인되었습니다.");
+                window.localStorage.setItem('user',JSON.stringify(json))
+   
+                this.setState({
+                    id: json.id,
+                });
+            }
+            else{
+                alert("아이디 또는 비밀번호 확인해주세요");
+            }
+         });
     }
+
+
+
 
 
     render() {
@@ -59,12 +77,12 @@ class Longin extends React.Component {
                     <form onSubmit={this.onSubmit}>
                         <div className="id_box">
                             <div className="text_">ID &nbsp;</div>
-                            <input type="text" name="ID" value={this.state.ID} onChange={this.onChange} className="idinput" />
+                            <input type="text" name="id" value={this.state.id} onChange={this.onChange} className="idinput" />
                         </div>
 
                         <div className="pw_box">
                             <div className="text_">비밀번호</div>
-                            <input type="password" name="PW" value={this.state.PW} onChange={this.onChange} className="idinput" />
+                            <input type="password" name="pw" value={this.state.pw} onChange={this.onChange} className="idinput" />
                         </div>
 
                         <input type='submit' value='확인' className="login_Button_finish"></input>
@@ -77,9 +95,6 @@ class Longin extends React.Component {
                         <Signup_button />
                         <Search_button />
                     </div>
-
-
-
                 </div>
 
             </div>
